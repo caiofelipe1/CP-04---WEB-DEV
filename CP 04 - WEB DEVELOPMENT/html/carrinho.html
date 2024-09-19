@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="/styles/carrinho.css">
+</head>
+
+<body>
+    <button onclick="window.location.href='../index.html'" class="btn-home">Voltar para o Início</button>
+
+    <ul id="lista-produtos"></ul>
+
+    <div class="produto-container">
+        <div>
+            <p>Item 1</p>
+            <img src="/carrinho/img/camisetaCP.jpg" alt="Camiseta" class="produto-imagem">
+            <p style="font-weight: bold;">Camiseta</p>
+            <p>Valor: R$29.99</p>
+            <input type="number" id="quantidade-produto-1" placeholder="Quantidade" min="1" value="1">
+            <button onclick="addProdutoComQuant(1, 'Camiseta', 29.99)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div>
+            <p>Item 2</p>
+            <img src="/carrinho/img/calcaCP.jpg" alt="Calça Jeans" class="produto-imagem">
+            <p style="font-weight: bold;">Calça Jeans</p>
+            <p>Valor: R$99.90</p>
+            <input type="number" id="quantidade-produto-2" placeholder="Quantidade" min="1" value="1">
+            <button onclick="addProdutoComQuant(2, 'Calça Jeans', 99.90)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div>
+            <p>Item 3</p>
+            <img src="/carrinho/img/tenisCP.jpg" alt="Tênis" class="produto-imagem">
+            <p style="font-weight: bold;">Tênis</p>
+            <p>Valor: R$149.90</p>
+            <input type="number" id="quantidade-produto-3" placeholder="Quantidade" min="1" value="1">
+            <button onclick="addProdutoComQuant(3, 'Tênis', 149.90)">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <ul id="lista-produtos"></ul>
+
+    <script src="/carrinho/script.js"></script>
+</body>
+</html>
